@@ -1,0 +1,43 @@
+/* main.css */
+body {
+    font-family: 'Nunito', sans-serif;
+}
+
+.clock {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+/* 작은 버튼 크기 설정 */
+.emergencyBtn, .normalBtn {
+    padding: 5px 10px; /* 버튼 안쪽 여백 (위아래, 좌우) */
+    font-size: 0.9rem;; /* 글자 크기 */
+    width: 100px; /* 버튼의 너비 */
+    height: 50px; /* 버튼의 높이 */
+}
+
+.alertBox {
+    background-color: rgb(144, 221, 235); 
+    color: black;
+    border-left: 5px solid rgb(86, 128, 241);
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+/* 비상 상태 (EMERGENCY) */
+.alertBox.emergency {
+    background-color: red; /* 비상일 때 빨간색 */
+    color: white;
+    border-left: 5px solid darkred;
+}
+
+.alertMessage {
+    text-align: center;
+    font-size: 1.2rem;
+}
+
+.map {
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+
